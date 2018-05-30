@@ -50,6 +50,6 @@ export default class WOL {
 
 type WolOptions = {
     ip?: string;
-    port?: number,
-    mac?: string
+    port?: number;
+    mac?: string;
 };

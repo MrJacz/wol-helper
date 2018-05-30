@@ -4,8 +4,8 @@
   "description": "A useful dashboard and discord bot for turning your pc on",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix src && tslint --fix 'src/*/**/*.ts'",
-    "test": "eslint src && tslint 'src/*/**/*.ts'",
+    "lint": "tslint --fix 'src/*/**/*.ts'",
+    "test": "tslint 'src/*/**/*.ts'",
     "build": "tsc --project ./",
     "install": "tsc --project ./"
   },
