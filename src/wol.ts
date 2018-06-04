@@ -14,10 +14,10 @@ export default class WOL {
     public constructor(options?: WolOptions) {
 
         this.options = {
+            ...options,
             ip: "255.255.255.255",
             port: 9,
-            mac: null,
-            ...options
+            mac: null
         };
     }
 
