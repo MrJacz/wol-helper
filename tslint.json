@@ -53,6 +53,8 @@
 				"variable-declaration": "onespace"
 			}
         ],
-        "semicolon": [true, "always"]
+		"semicolon": [true, "always"],
+		"no-var-keyword":true,
+		"no-unused-variable":true
 	}
 }
