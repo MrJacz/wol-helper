@@ -7,9 +7,11 @@ new Client({
     prefix: config.prefix,
     regexPrefix: /^Wol,/i,
     commandEditing: true,
+    commandLogging: true,
     messageCacheMaxSize: 20,
     messageCacheLifetime: 60 * 10,
     messageSweepInterval: 3600,
+    console: { useColor: true },
     disabledEvents: [
         "GUILD_SYNC",
         "GUILD_BAN_ADD",
@@ -27,5 +29,6 @@ new Client({
         "RELATIONSHIP_ADD",
         "RELATIONSHIP_REMOVE"
     ],
-    presence: { activity: { name: "Jacz's home", type: "WATCHING" } }
+    presence: { activity: { name: "Jacz's home", type: "WATCHING" } },
+    pieceDefaults: { commands: { deletable: true, promptLimit: 3, promptTime: 10000 } }
 }).login(config.token);
