@@ -44,10 +44,12 @@ export default class EvalCommand extends Command {
 
     // Eval the input
     public async eval(msg: KlasaMessage, code: string): Promise<evalResults> {
-        const message = msg; // eslint-disable-line
-        const client = this.client; // eslint-disable-line
-        const guild = msg.guild; // eslint-disable-line
-        const gateways = this.client.gateways; // eslint-disable-line
+        /* tslint:disable */
+        const message = msg;
+        const client = this.client;
+        const guild = msg.guild;
+        const gateways = this.client.gateways;
+        /* tslint:enable */
 
         const stopwatch = new Stopwatch();
         let success, syncTime, asyncTime, result;

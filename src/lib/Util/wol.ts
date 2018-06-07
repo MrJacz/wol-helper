@@ -1,6 +1,5 @@
 import { isIPv6 } from "net";
 import { Socket, createSocket } from "dgram";
-import { resolve } from "path";
 
 const MAC_LENGTH: number = 0x06;
 const MAC_REPEAT: number = 0x16;
