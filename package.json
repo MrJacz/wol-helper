@@ -12,12 +12,13 @@
   "license": "MIT",
   "devDependencies": {
     "tslint": "^5.10.0",
-    "typescript": "^2.8.3"
+    "typescript": "^2.9.2"
   },
   "dependencies": {
-    "@types/node": "^10.3.1",
-    "@types/snekfetch": "^4.0.0",
+    "@types/node": "^10.3.3",
+    "@types/snekfetch": "^4.0.1",
     "discord.js": "github:discordjs/discord.js",
-    "klasa": "github:dirigeants/klasa"
+    "klasa": "github:dirigeants/klasa",
+    "snekfetch": "^4.0.2"
   }
 }
